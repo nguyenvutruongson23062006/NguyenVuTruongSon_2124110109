@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop - Lab 08</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .card-img-top { height: 240px; object-fit: contain; }
+        #sanpham { scroll-margin-top: 20px; }
+    </style>
+</head>
+<body id="trangchu" class="bg-white">
+    <header class="bg-success text-white p-4">
+        <div class="container text-center">
+            <h1 class="h2 fw-bold mb-1">MINI SHOP</h1>
+            <p class="mb-0">Thời trang mỗi ngày, phong cách của bạn</p>
+        </div>
+    </header>
+    <nav class="bg-light p-3 border-bottom" aria-label="Menu chính">
+        <div class="container d-flex flex-wrap gap-3">
+            <a href="#trangchu" class="text-dark text-decoration-none">Trang chủ</a>
+            <a href="#sanpham" class="text-dark text-decoration-none">Sản phẩm</a>
+        </div>
+    </nav>
+    <main>
+        <section class="container mt-4" aria-labelledby="banner-title">
+            <div class="bg-light p-4 p-md-5 text-center rounded-3">
+                <span class="badge text-bg-success mb-3">CHÀO BẠN ĐẾN VỚI MINI SHOP</span>
+                <h2 id="banner-title" class="display-6 fw-bold">Chào mừng đến Mini Shop</h2>
+                <p class="text-secondary mb-4">Mua sắm dễ dàng - Giá tốt mỗi ngày</p>
+                <a href="#sanpham" class="btn btn-primary px-4">Xem sản phẩm</a>
+            </div>
+        </section>
+        <section id="sanpham" class="container mt-5" aria-labelledby="products-title">
+            <h2 id="products-title" class="text-center mb-4">Sản phẩm nổi bật</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card h-100 shadow-sm rounded-3">
+                        <img src="images/sp1.jpg" class="card-img-top rounded-top-3 p-3" alt="Áo thun nam" width="400" height="240">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Áo thun nam</h3>
+                            <p class="text-danger fw-bold">199.000đ</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#buyModal" data-product="Áo thun nam" data-price="199.000đ">Mua ngay</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card h-100 shadow-sm rounded-3">
+                        <img src="images/sp2.jpg" class="card-img-top rounded-top-3 p-3" alt="Áo sơ mi nữ" width="400" height="240">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Áo sơ mi nữ</h3>
+                            <p class="text-danger fw-bold">249.000đ</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#buyModal" data-product="Áo sơ mi nữ" data-price="249.000đ">Mua ngay</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card h-100 shadow-sm rounded-3">
+                        <img src="images/sp3.jpg" class="card-img-top rounded-top-3 p-3" alt="Quần jeans" width="400" height="240">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Quần jeans</h3>
+                            <p class="text-danger fw-bold">399.000đ</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#buyModal" data-product="Quần jeans" data-price="399.000đ">Mua ngay</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card h-100 shadow-sm rounded-3">
+                        <img src="images/sp4.jpg" class="card-img-top rounded-top-3 p-3" alt="Giày thể thao màu đỏ" width="400" height="240">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Giày thể thao</h3>
+                            <p class="text-danger fw-bold">599.000đ</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#buyModal" data-product="Giày thể thao" data-price="599.000đ">Mua ngay</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2026 Mini Shop</p>
+        </div>
+    </footer>
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="buyModalLabel">Thông tin sản phẩm</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold" id="selectedProduct"></p>
+                    <p>Giá: <span id="selectedPrice" class="text-danger fw-bold"></span></p>
+                    <p class="text-secondary mb-0">Đây là chức năng minh họa trong bài thực hành, chưa đặt hàng hoặc thanh toán.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tiếp tục xem sản phẩm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('buyModal').addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            document.getElementById('selectedProduct').textContent = button.dataset.product;
+            document.getElementById('selectedPrice').textContent = button.dataset.price;
+        });
+    </script>
+</body>
+</html>

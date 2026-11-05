@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    background-color: #d3c7b1;
+}
+
+header {
+    padding: 24px 20px;
+    background-color: #3b597d;
+    color: #fff;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 21px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+main {
+    width: 84%;
+    margin: 0 auto;
+    padding: 18px 20px 23px;
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 26px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+.program-list {
+    list-style-type: none;
+}
+
+.program-list li {
+    display: block;
+    width: 295px;
+    max-width: calc(100% - 10px);
+    margin: 4px 5px;
+    padding: 10px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.images {
+    line-height: 0;
+}
+
+.images img {
+    display: inline-block;
+    width: 312px;
+    height: 167px;
+    max-width: calc(100% - 36px);
+    margin: 18px;
+    border: 4px solid #ccc;
+    border-radius: 18px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+footer {
+    padding: 18px 15px;
+    background-color: #183b4e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: inherit;
+}
+
+.images .image-hide {
+    display: none;
+}
+
+.images .image-invisible {
+    visibility: hidden;
+}
+
+/* LAB 05 - CSS Table, Form, selector nang cao, position va z-index. */
+.program-list li:hover {
+    color: #a40000;
+}
+
+.program-list li:first-child {
+    font-weight: 900;
+}
+
+.tuyensinh {
+    position: relative;
+    padding: 24px 18px 18px;
+    border: 1px solid #b7c3d0;
+    border-radius: 8px;
+    background-color: #f8fbff;
+}
+
+.nhan-tuyensinh {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px 12px;
+    background-color: #d92323;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0 7px 0 7px;
+}
+
+.notification-group {
+    position: relative;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.badge {
+    position: absolute;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.badge-blue {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: #2563eb;
+}
+
+.badge-red {
+    top: 25px;
+    left: 145px;
+    z-index: 2;
+    background-color: #e11d48;
+}
+
+.table-responsive {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.tuyensinh table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.tuyensinh th,
+.tuyensinh td {
+    padding: 11px 12px;
+    border: 1px solid #aeb9c5;
+}
+
+.tuyensinh thead {
+    background-color: #20598f;
+    color: #fff;
+}
+
+.tuyensinh tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tuyensinh tbody tr:nth-child(even) {
+    background-color: #edf1f5;
+}
+
+.tuyensinh tbody tr:hover {
+    background-color: #d7ebff;
+}
+
+.tuyensinh tbody tr.hocphi-thap {
+    box-shadow: inset 4px 0 #16a34a;
+}
+
+.tuyensinh tbody tr.hocphi-thap td:nth-child(2)::after {
+    content: "  • Học phí thấp nhất";
+    color: #16813d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tuyensinh th:nth-child(1),
+.tuyensinh td:nth-child(1),
+.tuyensinh th:nth-child(3),
+.tuyensinh td:nth-child(3) {
+    text-align: center;
+}
+
+.tuyensinh th:nth-child(4),
+.tuyensinh td:nth-child(4) {
+    text-align: right;
+}
+
+.tuyensinh td:nth-child(4) {
+    color: #d10000;
+    font-weight: bold;
+}
+
+.dangky-tuvan h2 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.dangky-tuvan form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 22px;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.dangky-tuvan .form-group {
+    margin-bottom: 15px;
+}
+
+.dangky-tuvan .form-group > label:first-child {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.dangky-tuvan label[for="hoten"]::after,
+.dangky-tuvan label[for="email"]::after,
+.dangky-tuvan label[for="sdt"]::after {
+    content: " *";
+    color: #dc2626;
+}
+
+.dangky-tuvan input[type="text"],
+.dangky-tuvan input[type="email"],
+.dangky-tuvan input[type="tel"],
+.dangky-tuvan select,
+.dangky-tuvan textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    background-color: #fff;
+    font: inherit;
+}
+
+.dangky-tuvan textarea {
+    resize: vertical;
+}
+
+.dangky-tuvan input[type="radio"],
+.dangky-tuvan input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    accent-color: #2563eb;
+}
+
+.dangky-tuvan .form-group > label + label {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.dangky-tuvan input:focus,
+.dangky-tuvan select:focus,
+.dangky-tuvan textarea:focus {
+    border-color: #2563eb;
+    outline: 2px solid #bfdbfe;
+}
+
+.dangky-tuvan input[required] {
+    border-left: 4px solid #dc2626;
+}
+
+.dangky-tuvan .form-buttons {
+    text-align: center;
+}
+
+.dangky-tuvan button {
+    margin: 0 4px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.dangky-tuvan button[type="reset"] {
+    background-color: #6b7280;
+}
+
+.dangky-tuvan button:hover {
+    background-color: #1748ad;
+    transform: translateY(-1px);
+}
+
+.dangky-tuvan button[type="reset"]:hover {
+    background-color: #4b5563;
+}
+
+.lienhe {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    padding: 11px 16px;
+    border-radius: 24px;
+    background-color: #1677c8;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.lienhe:hover {
+    background-color: #0b4f89;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        padding: 16px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    .images img {
+        display: block;
+        width: 312px;
+        height: auto;
+        margin: 18px auto;
+    }
+
+    .tuyensinh {
+        padding: 50px 10px 14px;
+    }
+
+    .badge-blue {
+        left: 0;
+    }
+
+    .badge-red {
+        left: 115px;
+    }
+
+    .tuyensinh tbody tr.hocphi-thap td:nth-child(2)::after {
+        display: block;
+    }
+
+    .dangky-tuvan form {
+        padding: 16px;
+    }
+
+    .lienhe {
+        right: 12px;
+        bottom: 12px;
+    }
+}

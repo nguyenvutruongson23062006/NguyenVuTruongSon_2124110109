@@ -1,0 +1,61 @@
+.title{
+    color: #2563ed;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.description{
+    font-size: 18px;
+    color: #555555;
+    line-height: 150%;
+}
+a{
+    color: #2563ed;
+    text-decoration: none;
+}
+.product{
+    width: 250px;
+    background-color: white;
+    text-align: center;
+}
+.price{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    background-color: #e5e7eb;
+    color: #374151;
+    text-align: center;
+}
+.banner{
+    background-image: url(../images/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sale{
+    background-color: #fcd5d5;
+    width: 120px;
+    height: fit-content;
+    font-weight: bold;
+    color: red;
+    border-radius: 50px;
+    text-align: center;
+}
+#image{
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+.off-sale{
+    color: #918f8fde;
+    text-decoration: line-through;
+}
+.buy{
+    background-color: #2563ed;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}

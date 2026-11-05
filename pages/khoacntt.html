@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa Công Nghệ Thông Tin</title>
+
+    <link rel="stylesheet" href="../css/style_khoacntt.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Trường Cao Đẳng Công Thương TP.Hồ Chí Minh</h2>
+        <h2>Khoa Công nghệ thông tin</h2>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Giới thiệu chung</h2>
+            <p>
+                Khoa Công Nghệ Thông Tin được thành lập từ 10/12/ 2001.
+                Từ đó đến nay Khoa Công Nghệ Thông Tin ngày càng phát triển
+                vững mạnh cả về số lượng và chất lượng đào tạo, với lực lượng
+                cán bộ giảng viên trẻ, nhiệt tình, năng động có trình độ chuyên môn cao
+                (trên 90% giảng viên có trình độ sau đại học) đủ đảm trách việc đào tạo nguồn nhân lực
+                có trình độ và chất lượng cao chuyên ngành Công Nghệ Thông Tin, đáp ứng nhu cầu
+                tuyển dụng của các cơ quan, doanh nghiệp trong và ngoài nước.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Chương trình đào tạo</h2>
+
+            <ul class="program-list">
+                <li>Công Nghệ Thông Tin (Link)</li>
+                <li>Truyền Thông và Mạng Máy Tính(Link)</li>
+                <li>Thiết Kế Đồ Họa(Link)</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Cơ sở vật chất</h2>
+
+            <p>
+                Khoa Công Nghệ Thông Tin được trang bị các trang thiết bị hiện đại,
+                hiện khoa có một phòng Kỹ thuật máy tính và 7 phòng máy tính
+                thực hành chuyên ngành với hơn 300 máy tính cấu hình mạnh,
+                đáp ứng đầy đủ nhu cầu học tập của sinh viên. Ngoài ra còn có
+                các thiết bị hỗ trợ như: server rack HP, router, switch, modem ADSL, wi-fi v.v…
+            </p>
+
+            <div class="images">
+                <img src="../images/cntt.jpg"
+                     alt="Công nghệ thông tin">
+
+                <img src="../images/mangmaytinh.jpg"
+                     alt="Mạng máy tính">
+            </div>
+        </section>
+
+        <section class="tuyensinh">
+            <span class="nhan-tuyensinh">TUYỂN SINH 2026</span>
+
+            <div class="notification-group" aria-label="Thông báo tuyển sinh">
+                <span class="badge badge-blue">TUYỂN SINH 2026</span>
+                <span class="badge badge-red">HOT</span>
+            </div>
+
+            <h2>Thông tin tuyển sinh</h2>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ngành đào tạo</th>
+                            <th>Thời gian đào tạo</th>
+                            <th>Học phí/HK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hocphi-thap">
+                            <td>1</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>2,5 năm</td>
+                            <td>5.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Truyền thông và Mạng máy tính</td>
+                            <td>2,5 năm</td>
+                            <td>5.200.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Thiết kế đồ họa</td>
+                            <td>2,5 năm</td>
+                            <td>5.500.000đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="dangky-tuvan">
+            <h2>Đăng ký tư vấn tuyển sinh</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="hoten">Họ và tên:</label>
+                    <input type="text" id="hoten" name="hoten"
+                           placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Nhập email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sdt">Số điện thoại:</label>
+                    <input type="tel" id="sdt" name="sdt"
+                           placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Giới tính:</label>
+                    <label>
+                        <input type="radio" name="gioitinh" value="nam">
+                        Nam
+                    </label>
+                    <label>
+                        <input type="radio" name="gioitinh" value="nu">
+                        Nữ
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="nganh">Ngành học quan tâm:</label>
+                    <select id="nganh" name="nganh">
+                        <option value="">-- Chọn ngành học --</option>
+                        <option value="cntt">Công nghệ thông tin</option>
+                        <option value="mmt">Truyền thông và Mạng máy tính</option>
+                        <option value="tkdh">Thiết kế đồ họa</option>
+                        <option value="tmdt">Thương mại điện tử</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="noidung">Nội dung cần tư vấn:</label>
+                    <textarea id="noidung" name="noidung" rows="4"
+                              placeholder="Nhập nội dung cần tư vấn"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="dongy" value="1">
+                        Đồng ý nhận thông tin tuyển sinh
+                    </label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Đăng ký</button>
+                    <button type="reset">Nhập lại</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <h3>KHOA CÔNG NGHỆ THÔNG TIN</h3>
+
+        <p>Trường Cao Đẳng Công Thương TP.Hồ Chí Minh</p>
+
+        <p>Website: https://fit-hitu.edu.vn</p>
+    </footer>
+
+    <a href="tel:0123456789" class="lienhe">☎ Liên hệ tư vấn</a>
+
+</body>
+
+</html>

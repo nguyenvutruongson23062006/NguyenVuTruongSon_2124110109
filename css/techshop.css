@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.site-header {
+    padding: 28px 20px;
+    text-align: center;
+    background: #e0edff;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #1e3a8a;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.site-header p {
+    margin: 8px 0 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 16px;
+    background: #1e3a8a;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1160px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+.product-section {
+    clear: both;
+    padding-top: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-width: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px #ccc;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product h3 {
+    font-size: 18px;
+}
+
+.price {
+    color: #d92020;
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.site-footer {
+    clear: both;
+    margin-top: 40px;
+    padding: 24px 80px;
+    text-align: center;
+    background: #1e3a8a;
+    color: white;
+}
+
+.site-footer h2, .site-footer a {
+    color: white;
+}
+
+.site-footer p {
+    margin: 6px 0;
+}
+
+/* Bố cục danh mục và sản phẩm của Tech Shop. */
+.shop-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.categories {
+    flex: 0 0 25%;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+.categories h2 {
+    margin-top: 0;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+.shop-layout .product-section {
+    flex: 1;
+    min-width: 0;
+    padding-top: 0;
+}
+
+.shop-layout .product-section > h2 {
+    margin-top: 0;
+}
+
+.product-icon {
+    margin: 0;
+    font-size: 70px;
+    line-height: 150px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .product {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .shop-layout {
+        flex-direction: column;
+    }
+    .categories, .shop-layout .product-section {
+        width: 100%;
+    }
+    .main-nav {
+        gap: 15px;
+        padding: 14px 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .product {
+        flex-basis: 100%;
+    }
+}
+
+.sale {
+    display: block;
+    width: fit-content;
+    margin: 0 0 12px auto;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    transform-origin: right center;
+    animation: sale-effect 2s infinite;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes sale-effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

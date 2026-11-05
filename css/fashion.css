@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.site-header {
+    padding: 28px 20px;
+    text-align: center;
+    background: #e0edff;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #1e3a8a;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.site-header p {
+    margin: 8px 0 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 16px;
+    background: #1e3a8a;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1160px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro img {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.product-section {
+    clear: both;
+    padding-top: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 0 calc((100% - 60px) / 4);
+    min-width: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px #ccc;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product h3 {
+    font-size: 18px;
+}
+
+.old-price {
+    color: #777;
+}
+
+.price {
+    color: #d92020;
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.site-footer {
+    clear: both;
+    margin-top: 40px;
+    padding: 24px 80px;
+    text-align: center;
+    background: #1e3a8a;
+    color: white;
+}
+
+.site-footer h2, .site-footer a {
+    color: white;
+}
+
+.site-footer p {
+    margin: 6px 0;
+}
+
+.contact-fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.contact-fixed a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 3px 8px #999;
+    transition: transform 0.3s ease;
+}
+
+.contact-fixed .phone {
+    background-color: #16a34a;
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .product {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 576px) {
+    .main-nav {
+        gap: 15px;
+        padding: 14px 8px;
+        font-size: 14px;
+    }
+    .product {
+        flex-basis: 100%;
+    }
+    .site-footer {
+        padding: 24px 70px 24px 20px;
+    }
+}
+
+.sale {
+    display: block;
+    width: fit-content;
+    margin: 0 0 12px auto;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    transform-origin: right center;
+    animation: sale-effect 2s infinite;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes sale-effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.contact-fixed a:hover {
+    transform: scale(1.1);
+}
+
+.contact-fixed svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+/* Lab 07: khung noi dung dai; thu visible, hidden, scroll, auto tai day. */
+.intro-content {
+    clear: both;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    background: white;
+    margin-bottom: 24px;
+}
+
+.intro-content h2 { margin-top: 0; }
+
+/* Font tuy chinh dung @font-face, du phong bang Roboto. */
+@font-face {
+    font-family: 'FashionHeading';
+    src: url('../fonts/fashion-heading.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, .main-nav {
+    font-family: 'FashionHeading', 'Roboto', sans-serif;
+}
+
+.brand-section { margin-top: 36px; }
+.brand-list, .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.brand-item {
+    flex: 0 0 calc((100% - 60px) / 4);
+    min-width: 0;
+    padding: 24px 12px;
+    border: 1px solid #d6e1f2;
+    border-radius: 10px;
+    background: white;
+    color: #1e3a8a;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.site-footer { padding: 32px 20px; text-align: left; }
+.footer-content { max-width: 1120px; margin: auto; }
+.footer-item { flex: 0 0 calc((100% - 40px) / 3); min-width: 0; overflow-wrap: anywhere; }
+.footer-item h3 { margin-top: 0; }
+.footer-bottom {
+    max-width: 1120px;
+    margin: 24px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #647cae;
+    text-align: center;
+}
+@media (min-width: 577px) and (max-width: 992px) {
+    .brand-item, .footer-item { flex-basis: calc((100% - 20px) / 2); }
+}
+@media (max-width: 576px) {
+    .brand-item, .footer-item { flex-basis: 100%; }
+    .main-nav { flex-wrap: wrap; }
+    .contact-fixed { right: 12px; bottom: 12px; }
+    .contact-fixed a { width: 44px; height: 44px; }
+    .footer-content { padding-right: 48px; }
+}
+

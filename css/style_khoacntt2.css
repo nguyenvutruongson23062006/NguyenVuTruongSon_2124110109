@@ -1,0 +1,132 @@
+/* LAB 04 - CAU B (BAI LAM THEM): dinh dang tren HTML da cho. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 2px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    line-height: 22.4px;
+    color: #000;
+    background-color: #e3dbcd;
+}
+
+.container {
+    width: 84.4%;
+    margin-left: 8.9%;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+header {
+    padding: 23px 22px;
+    background-color: #034c53;
+    color: #fff;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+header h4 {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 13px;
+}
+
+main {
+    padding: 15px 15px 0;
+}
+
+.muctieu {
+    padding-left: 14px;
+    border-left: 3px solid #ffa500;
+}
+
+.nghenghiep {
+    margin: 33px 15px 22px;
+}
+
+.nghenghiep h2 {
+    margin-bottom: 5px;
+}
+
+.nghenghiep ul {
+    list-style-type: none;
+}
+
+.nghenghiep li {
+    min-height: 32px;
+    padding: 5px 14px;
+    border: 1px solid #bbb;
+    background-color: #ddd;
+    line-height: 20px;
+}
+
+.phonghoc h2 {
+    margin-bottom: 3px;
+}
+
+.phong {
+    display: block;
+    width: 66px;
+    height: 66px;
+    margin: 4px 4px 4px 3px;
+    border: 4px dotted #ddd;
+    border-radius: 50%;
+    background-color: #f00;
+    color: #fff;
+    line-height: 58px;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 22px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: #ec5228;
+    color: #fff;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.buttons a:hover,
+.buttons a:focus-visible {
+    background-color: #d6411b;
+    outline: 2px solid #034c53;
+    outline-offset: 2px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #007074;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: inherit;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .nghenghiep {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

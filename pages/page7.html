@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3-Buổi 3</title>
+</head>
+<body>
+    <h1>Tìm kiếm sản phẩm</h1>
+    <form action="">
+        <fieldset>
+            <legend>Thông tin tìm kiếm</legend>
+            <label for="f-timkiem">Từ khóa:</label>
+            <input type="text" name="timkiem" id="f-timkiem" placeholder="Nhập tên sản phẩm">
+            <br><br>
+            <label for="sp">Danh mục sản phẩm:</label>
+            <select name="sanpham" id="sp">
+                <option value="">--Chọn danh mục--</option>
+                <optgroup label="Phụ kiện máy tính">
+                    <option value="mouse">Chuột</option>
+                    <option value="keyboard">Bàn phím</option>
+                    <option value="earphone">Tai nghe</option>
+                </optgroup>
+                <optgroup label="Thiết bị mạng">
+                    <option value="router">Router WIFI</option>
+                    <option value="extender">Bộ kích sóng WIFI</option>
+                    <option value="switch">Switch mạng</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="f-gia">Mức giá:</label>
+            <select name="gia" id="f-gia">
+                <option value="">--Chọn mức giá--</option>
+                <option value="thap">Dưới 500.000đ</option>
+                <option value="trung">500.000đ - 1.000.000đ</option>
+                <option value="cao">Trên 1.000.000đ</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Tìm kiếm">
+            <input type="reset" value="Nhập lại">
+        </fieldset>
+    </form>
+</body>
+</html>

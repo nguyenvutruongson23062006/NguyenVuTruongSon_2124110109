@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2-Buổi 3</title>
+</head>
+<body>
+    <h1>Thông tin đặt hàng</h1>
+    <form action="">
+        <fieldset>
+            <legend>Thông tin giao hàng</legend>
+            <label for="f-fullname">Họ và tên:</label>
+            <input type="text" name="fullname" id="f-fullname" placeholder="Nhập họ và tên" maxlength="50" required>
+            <br><br>
+            <label for="f-SDT">Số điện thoại:</label>
+            <input type="tel" name="SDT" id="f-SDT" placeholder="Nhập số điện thoại" maxlength="12" required>
+            <br><br>
+            <label for="f-Diachi">Địa chỉ:</label>
+            <input type="text" name="Diachi" id="f-Diachi" placeholder="Nhập địa chỉ giao hàng" maxlength="100" required>
+            <br><br>
+            <select name="city" id="f-city">
+                <option value="">--Chọn Tỉnh/Thành Phố</option>
+                <option value="hcm">TP Hồ Chí Minh</option>
+                <option value="hn">Hà Nội</option>
+                <option value="dn">Đà Nẵng</option>
+                <option value="ct">Cần Thơ</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Phương thức thanh toán</legend>
+            <input type="radio" name="thanhtoan" id="f-tructiep" value="tttructiep" required>
+            <label for="f-tructiep">Thanh toán khi nhận hàng (COD)</label>
+            <br>
+            <input type="radio" name="thanhtoan" id="f-nganhang" value="cknganhang" required>
+            <label for="f-nganhang">Chuyển khoản ngân hàng</label>
+            <br>
+            <input type="radio" name="thanhtoan" id="f-viDT" value="ViDT" required>
+            <label for="f-viDT">Ví điện tử</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dịch vụ</legend>
+            <input type="checkbox" name="XHD" id="XuatHD">
+            <label for="XuatHD">Xuất hóa đơn</label>
+            <br>
+            <input type="checkbox" name="Goiqua" id="f-Goiqua">
+            <label for="f-Goiqua">Gói quà</label>
+            <br>
+            <input type="checkbox" name="GHN" id="f-GHN">
+            <label for="f-GHN">Giao hàng nhanh</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Ghi chú</legend>
+            <label for="f-gcdh">Ghi chú đơn hàng</label>
+            <br>
+            <textarea name="gcdh" id="f-gcdh" rows="10" cols="100" placeholder="Nhập ghi chú cho đơn hàng ..."></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Đặt hàng">
+        <input type="reset" value="Nhập lại">
+    </form>
+</body>
+</html>

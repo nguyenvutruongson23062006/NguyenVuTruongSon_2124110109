@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 45px 20px;
+    background-color: #eef3f8;
+    color: #253342;
+    font-family: Arial, sans-serif;
+}
+
+.product-page {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(36, 64, 92, 0.12);
+}
+
+h2 {
+    margin-bottom: 24px;
+    color: #183f68;
+    font-size: 24px;
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.bang-sanpham {
+    width: 80%;
+    min-width: 680px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.bang-sanpham th,
+.bang-sanpham td {
+    padding: 12px 14px;
+    border: 1px solid #c8d0d9;
+}
+
+.bang-sanpham thead {
+    background-color: #20598f;
+    color: #fff;
+}
+
+.bang-sanpham tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.bang-sanpham tbody tr:nth-child(even) {
+    background-color: #edf1f5;
+}
+
+.bang-sanpham tbody tr:hover {
+    background-color: #d8eaff;
+}
+
+.bang-sanpham th:nth-child(1),
+.bang-sanpham td:nth-child(1),
+.bang-sanpham th:nth-child(4),
+.bang-sanpham td:nth-child(4) {
+    text-align: center;
+}
+
+.bang-sanpham th:nth-child(3),
+.bang-sanpham td:nth-child(3),
+.bang-sanpham th:nth-child(5),
+.bang-sanpham td:nth-child(5) {
+    text-align: right;
+}
+
+.bang-sanpham tfoot {
+    background-color: #fff1bf;
+    font-weight: bold;
+}
+
+.bang-sanpham tfoot td:first-child {
+    text-align: right;
+}
+
+.bang-sanpham tfoot td:last-child {
+    color: #e11d1d;
+    text-align: right;
+}
+
+.back-link {
+    display: table;
+    margin: 24px auto 0;
+    color: #20598f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .product-page {
+        padding: 22px 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .bang-sanpham {
+        width: 100%;
+    }
+}
